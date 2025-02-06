@@ -4,64 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rahul Anuganti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #121212;
             color: white;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
         header {
             background: #1f1f1f;
-            color: white;
-            text-align: center;
-            padding: 20px;
+            padding: 40px 20px;
         }
-        header img {
-            border-radius: 50%;
-            margin-top: 10px;
+        header h1 {
+            font-size: 3em;
+            font-weight: bold;
+            color: #fdbb2d;
+        }
+        header p {
+            font-size: 1.5em;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            border: 2px solid #fdbb2d;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: #fdbb2d;
+            color: black;
+        }
+        .btn i {
+            margin-right: 8px;
         }
         section {
             background: #1f1f1f;
-            margin: 20px auto;
-            padding: 20px;
+            margin: 30px auto;
+            padding: 40px;
             width: 80%;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
         }
         h2 {
-            color: #00bcd4;
+            color: #fdbb2d;
+            font-size: 2em;
         }
         ul {
-            list-style-type: square;
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            font-size: 1.3em;
+            margin: 10px 0;
+        }
+        .skills {
+            font-weight: bold;
+            font-size: 1.5em;
+            text-transform: uppercase;
         }
         footer {
             background: #1f1f1f;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            width: 100%;
-        }
-        a {
-            color: #00bcd4;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 768px) {
-            section {
-                width: 95%;
-            }
+            padding: 20px;
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Rahul Anuganti</h1>
-        <p>Passionate to code :)</p>
-        <img src="myimage.jpg" alt="my image" height="160px" width="120px">
+        <p>Tech Enthusiast | Full Stack Developer</p>
+        <div class="button-container">
+            <a href="https://github.com/rahulanuganti" class="btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/rahul-anuganti-158b61225/" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
     </header>
     
     <section>
@@ -76,14 +101,13 @@
     <section>
         <h2>Skills</h2>
         <ul>
-            <li>HTML, CSS, JavaScript, Bootstrap</li>
-            <li>Java</li>
-            <li>SQL</li>
-            <li>Responsive Web Design</li>
-            <li>DOM Manipulation</li>
-            <li>ReactJS</li>
-            <li>Spring Boot</li>
-            <li>Git</li>
+            <li class="skills">HTML, CSS, JavaScript, Bootstrap</li>
+            <li class="skills">Java</li>
+            <li class="skills">SQL</li>
+            <li class="skills">Responsive Web Design</li>
+            <li class="skills">ReactJS</li>
+            <li class="skills">Spring Boot</li>
+            <li class="skills">Git</li>
         </ul>
     </section>
     
@@ -95,25 +119,8 @@
         </ul>
     </section>
     
-    <section>
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Coding</li>
-            <li>Debating</li>
-            <li>Exploring new technologies</li>
-            <li>Playing Cricket</li>
-        </ul>
-    </section>
-    
     <footer>
-        <h2>Contact</h2>
-        <ul>
-            <li><b>Email:</b> rahulanuganti2425@gmail.com</li>
-            <li><a href="https://www.linkedin.com/in/rahul-anuganti-158b61225/"><b>LinkedIn</b></a></li>
-            <li><a href="https://github.com/rahulanuganti"><b>GitHub</b></a></li>
-            <li><a href="https://leetcode.com/u/rahulanuganti/"><b>LeetCode</b></a></li>
-        </ul>
-        <h3>Made with &hearts; by Rahul</h3>
+        <p>Made with ❤️ by Rahul</p>
     </footer>
 </body>
 </html>
